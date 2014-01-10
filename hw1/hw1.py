@@ -3,44 +3,6 @@ from sklearn.neighbors  import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.cross_validation import KFold
 
-KNN = True
-NB = False 
-
-
-# Questions
-# How to separate data set into randomly ordered groups for training and testing (e.g., iris_data and iris_target)
-# Numpy - arange and shuffle?
-
-
-
-
-
-
-
-
-# Pseudo Code Notes
-# 
-# Load data
-#     Training data
-#     Data for prediction
-#     Data for scoring
-# 
-# Choose model
-#     if KNN choose neighbors
-#     additional parameters for either model
-#
-# Cross Validation
-#     get KFolds parameteres
-#     test multiple KFolds      
-#     visualize results
-#
-# Create django interface
-# 
-
-
-
-
-
 
 def load_iris_data():
     # loads iris dataset 
