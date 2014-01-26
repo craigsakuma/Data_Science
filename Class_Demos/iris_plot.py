@@ -1,3 +1,8 @@
+# DEMO from Rob Hall
+# plots iris data set two features at a time
+# demo was designed for AWS node, so files are saved instead of displayed
+
+
 import matplotlib
 matplotlib.use("AGG")
 # need AGG for AWS environment
