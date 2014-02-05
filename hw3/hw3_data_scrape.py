@@ -1,52 +1,42 @@
-#get data
-#histograms
-#build rf model
-#evaluate rf model using roc curve and plot
-#include t-test
-import urllib
-#urllib2 might be better library
-import os
-import json
-import time
-import random
-import matplotlib
-#import requests #alternate to urllib
-dir_out = '/home/rob/data/yahoo_data_20140116'
+import csv
+import numpy as np
 
-if not os.path.exists(dir_out):
-    print 'Creating directory %s' % dir_out
-    os.mkdir(dir_out)
+# import dataset from csv file and convert into numpy array
+data = []
 
-#symbols = ['FB','GOOG','AAPL']
-symbols = ['FB']
-#symbols  = json.loads(open("symbols.json").read())
-for symbol in symbols:
-    time.sleep(.5+random.random())
-    data_out = {}
-    if 'more than 25' not in data_out:
-        data_out['more than 25']=0
-    if 'less than 25' not in data_out:
-            data_out['less than 25']=0
-    try:
-        #url = 'http://ichart.finance.yahoo.com/table.csv?s=%s&d=6&e=23&f=2013&g=d&a=8&b=7&c=1984&ignore=.csv' % symbol
-        url = 'http://ichart.finance.yahoo.com/table.csv?s=%s&d=0&e=15&f=2014&g=d&a=4&b=18&c=2012&ignore=.csv' % symbol
-        print url
-        data = urllib.urlopen(url).read()
-        file = '%s/%s_data.csv' % (dir_out,symbol)
-        f = open(file,'w')
-        f.write('%s' % str(data))
-        f.close()
-        print 'wrote file %s' % file
-        data = data.split('\n')
-        for d in data:
-            d = d.split(',')
-            try:
-                close = d[6]
-                if float(close) >= float(25):
-                    data_out['more than 25']+=1
-                elif float(close) < float(25):
-                    data_out['less than 25']+=1
-            except:pass
-        print symbol,':', json.dumps(data_out)
-    except:
-        print 'failed for %s' % symbol
+with open('./spambase/spambase.csv', 'rb') as csv_file_object:
+    reader = csv.reader(csv_file_object)
+    for row in reader:
+        data.append(row)
+
+data = np.array(data)
+
+# separate classifcations from features in data set
+spam_class = data[:,-1]
+features = data[:,:-1]
+
+# import feature names
+feature_names = np.zeros(shape=(57,2))
+
+text_file = open("./spambase/spambase.names", "r")
+data = text_file.readlines()
+
+# remove first 33 lines of comments in file 
+data = data[33:]
+data = np.array(data)
+
+# remove extra spaces and separate string into feature name and feature type
+for line in data:
+    feature_names.append([n for n in line.split(':')])
+text_file.close()
+
+#feature_names = np.array(feature_names)
+# remove feature type in second column of array
+#feature_names = feature_names[:,:1]
+feature_names = np.array(feature_names)
+print feature_names
+#print feature_names[1]
+#print feature_names[-1]
+
+print type(feature_names)
+print np.size(feature_names)
