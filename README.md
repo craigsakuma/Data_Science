@@ -27,10 +27,6 @@ HW3 Random Forest using Spambase Public Data Set
 HW4
 - Currently work in progress
 
-Project
-- Currently work in progress
-- Contains open data set from Yelp
-
 Examples_from_Class
 - contains code examples reviewed in class
 
