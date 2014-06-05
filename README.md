@@ -5,7 +5,6 @@ Repository for Data_Science examples
 
 KNN and Naive-Bayes Classifiers with Cross Validation (KNN_NB_Classfiiers)
 - Use wrapper to run the script
-- Iris data set is used in example, but any data set can be substituted
 - Includes KNN and Naive Bayes classifiers
 - Calculates n fold cross validation for variety of values for n
 - Identifies optimal number of folds for highest accuracy
@@ -14,7 +13,6 @@ KNN and Naive-Bayes Classifiers with Cross Validation (KNN_NB_Classfiiers)
 
 Logistic Regression with Regularization (Log_Regression)
 - Use wrapper to run the script
-- Iris data set is used
 - User inputs number of folds for cross validation
 - Scores logistic regression models with variety of values for the regularization parameter C (note: lower values for C result in higher regularization)
 - Identifies value for C with optimal accuracy
