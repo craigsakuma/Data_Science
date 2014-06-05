@@ -1,4 +1,4 @@
-GA_homework
+Data_Science
 ===========
 
 General Assembly Data Science Class Homework Repository
@@ -23,9 +23,6 @@ HW3 Random Forest using Spambase Public Data Set
 - Graphs histogram for each of the 57 features
 - Applies 2 fold cross validation to separate data set into training and testing sets
 - Creates 2 ROC curves and calculates AUC using 2 fold cross validation
-
-HW4
-- Currently work in progress
 
 Examples_from_Class
 - contains code examples reviewed in class
