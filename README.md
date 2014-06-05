@@ -33,7 +33,7 @@ Yelp_Analysis
 - Implementation of RecSys recommmendation engine
 
 
-ExamplesClass
+Examples_from_Class
 - Contains code examples reviewed in General Assembly Course
 
 
@@ -42,4 +42,4 @@ Titanic
 - Data set from Kaggle 
 
 
-NOTE: Majority of data science exmaples are in private repositories that need to be sanitized before being shared in an open source forum.
+NOTE: Majority of data science examples are in private repositories that need to be sanitized before being shared in an open source forum.
