@@ -1,11 +1,11 @@
 Data_Science
 ===========
 
-General Assembly Data Science Class Homework Repository
+Repository for Data_Science examples
 
-HW1 Classification with Cross Validation 
+KNN and Naive-Bayes Classifiers with Cross Validation 
 - Use wrapper to run the script
-- Iris data set is used
+- Iris data set is used in example, but any data set can be substituted
 - Includes KNN and Naive Bayes classifiers
 - Calculates n fold cross validation for variety of values for n
 - Identifies optimal number of folds for highest accuracy
