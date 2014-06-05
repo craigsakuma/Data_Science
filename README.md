@@ -27,9 +27,16 @@ Random Forest using Spambase Public Data Set
 - Applies 2 fold cross validation to separate data set into training and testing sets
 - Creates 2 ROC curves and calculates AUC using 2 fold cross validation
 
-Examples_from_Class
-- contains code examples reviewed in class
+Yelp_Analysis
+- Analysis of open source data set from Yelp
+- Exploratory analysis of the data set
+- Implementation of RecSys recommmendation engine
+
+ExamplesClass
+- Contains code examples reviewed in General Assembly Course
 
 Titanic
 - Currently work in progress
 - Data set from Kaggle 
+
+NOTE: Majority of data science exmaples are in private repositories that need to be sanitized before being shared in an open source forum.
