@@ -3,8 +3,7 @@ Data_Science
 
 Repository for Data_Science examples
 
-KNN_NB_Classfiiers
-KNN and Naive-Bayes Classifiers with Cross Validation 
+KNN and Naive-Bayes Classifiers with Cross Validation (KNN_NB_Classfiiers)
 - Use wrapper to run the script
 - Iris data set is used in example, but any data set can be substituted
 - Includes KNN and Naive Bayes classifiers
@@ -13,8 +12,7 @@ KNN and Naive-Bayes Classifiers with Cross Validation
 - Argparse options for selecting only one classifier
 
 
-Log_Regression
-Logistic Regression with Regularization
+Logistic Regression with Regularization (Log_Regression)
 - Use wrapper to run the script
 - Iris data set is used
 - User inputs number of folds for cross validation
@@ -22,8 +20,7 @@ Logistic Regression with Regularization
 - Identifies value for C with optimal accuracy
 
 
-Random_Forest
-Random Forest using Spambase Public Data Set
+Random Forest using Spambase Public Data Set (Random_Forest)
 - Uses spambase data set from https://archive.ics.uci.edu/ml/datasets/Spambase
 - Graphs histogram for each of the 57 features
 - Applies 2 fold cross validation to separate data set into training and testing sets
