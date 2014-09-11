@@ -1,8 +1,10 @@
-
+#!/usr/bin/python
 """
-Creates aliases for spans and zones
+MOVIE SCRAPER
+=============
 
-Requires installation of unidecode package
+This script is used to scrape movie titles from imdb using 
+the kimono labs API
 """
 
 import json
@@ -29,12 +31,12 @@ def cleanText(text):
     return text
 
     
-def getMovies(year):
+def getMovies(year,api_key):
     "Creates list of movies by year (selects top 250 by box office gross)"
     movies = set()    
     for n in [1,51]:
         url = "https://www.kimonolabs.com/api/5zx3f8d8?" + \
-                "apikey=TTBcrF02M3sETvHdHqP5Wxd3gpcPPfEC" + \
+                "apikey={}".format(api_key) + \
                 "&release_date={}".format(year) + \
                 "&sort=boxoffice_gross_us,desc" +\
                 "&start={}&title_type=feature".format(n)
